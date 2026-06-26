@@ -19,14 +19,18 @@ gap: 2em;
     background-size: cover;
     background-position: center;
     font-family: "Alien Block", sans-serif;
+   
 
 
 }
 
 
 header img{
-     min-width: 130px;
-    max-height: 80px;
+     width: 130px;
+    height: 80px;
+    background-color: #252222;
+    border-radius: 15px;
+   
 
 
 
