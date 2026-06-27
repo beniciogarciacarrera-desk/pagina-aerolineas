@@ -1,7 +1,7 @@
   
 *{
  margin: 0;
-    padding: 0;
+    padding: 0;/*para que quede sin bordes*/ 
     box-sizing: border-box;
 }
 body{
@@ -9,15 +9,16 @@ body{
 }
 
 header{
-display: flex;
-flex-direction: row;
-color:#FF0000 ;
-padding: 2em;
-gap: 2em;
- background-image: url(assets-web/avion2.png);
- background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+   
+display: flex;/*hace que elementos dentro del titulo se puedan mover*/
+
+color:#FF0000 ;/*le da color al titulo*/
+padding: 2em;/*agranda el espacio del header*/
+gap: 2em;/*separa los elementos del header*/
+ background-image: url(assets-web/fsfnmsjkenfjkfnjkfnijaefjsafnjsfnwjfwq.avif);/*le da una imagen al header */
+ background-repeat: no-repeat;/*hace que lai magen no se repita multiples veces*/
+    background-size: cover;/*achica la imagen*/
+    background-position: center;/*posiciona la imagen del header en el centro*/
     font-family: "Alien Block", sans-serif;
    
 
@@ -26,10 +27,10 @@ gap: 2em;
 
 
 header img{
-     width: 130px;
-    height: 80px;
-    background-color: #252222;
-    border-radius: 15px;
+     width: 190px;/*le da un ancho fijo al tamaño del logo*/
+    height: 130px;/*le da un alto fijo al tamaño del logo*/
+    
+   
    
 
 
@@ -37,111 +38,122 @@ header img{
 }
 
 nav{
-    background-color: #252222;
-   padding: 0.8em;
-   height: 50px;
+    background-color: #252222;/*le da un color de fondo al nav*/
+   padding: 0.8em;/*le da un espacio invisible a los nav*/
+   height: 50px;/*le da un alto fijo al elemento del nav*/
 }
 nav ul{
-display: flex;
-list-style: none;
-justify-content: center;
-gap: 60px;
+display: flex;/*permite que los elementos del nav se puedan mover*/
+
+justify-content: center;/*aliena los elementos del nav*/
+gap: 60px;/*separa los elementos del nav*/
 }
-nav ul li{
-    padding: 1em;
-}
+
 nav a{
-    color: #fff;
-    font-weight: 900;
-    text-decoration: none;
+    color: #fff;/*le da un color a los elementos al nav*/
+    font-weight: 900;/*le da un espesor a las letras del nav*/
+    text-decoration: none;/*le quita el subrayado prederteminado de los enlaces*/
   
   
 }
-nav a:hover{
-    border-bottom: 2px solid #fff; 
+nav a:hover{/*el hover para cuando pasas por encima de el haga un cambio*/
+    border-bottom: 2px solid #fff; /*cada ves que pasas por encima y hace un cambio se muestra por ej un borde blanco*/
     
 }
 
    
-   
+ .h3-form{
+    text-align: center;/*centra el titulo del formulario*/
+}  
 .formulario{
-    display: flex;
-    justify-content: center;
-background: #ff0000;
-background: radial-gradient(circle,rgba(255, 0, 0, 1) 0%, rgba(87, 4, 1, 1) 100%);
-    padding: 10px;
-    border-radius: 8px;
-    color: #fff;
-     font-weight: 900;
+    display: flex;/*para que los elementos del formulario se puedan mover*/
+    justify-content: center;/*para que los elemetos del formulario se puedan alinear al centro*/
+
+background: radial-gradient(circle,rgba(255, 0, 0, 1) 0%, rgba(87, 4, 1, 1) 100%);/*le da un degradado de colores al fondo del formulario*/
+    padding: 10px;/*para que los elementos del formulario no se peguen al borde*/
+    border-radius: 8px;/*le da un borde al formulario*/
+    color: #fff;/*le da el color de las letras al formulario*/
+     font-weight: 900;/* le da espesor*/
+    
+     
+
+   
 }
 
 
     
-.h3-form{
-    text-align: center;
-}
+
 .inscribir{
       display: flex;
-    flex-wrap: wrap;
-    width: 100vh;
-    margin: 15px;
-    border-radius: 5px;
-    padding: 10px;
+    flex-wrap: wrap;/*hace que el titulo y su contenido se separen en dos lienas horizontales*/
+    width: 100vh;/*le da un espacio 100% a los elementos del fromulario*/
+    margin: 20px;/*separa los elemtos del formulario*/
+    border-radius: 5px;/*le da un borde a los elementos*/
+    padding: 12px;/*le da un tamaño a los elementos del formulario*/
+   
   
 }
 .btn-form{
-    padding: 11px;
-    border-radius: 8px;
-    border-color: #FF0000;
-    background-color: #FF0000;
-   border: 5px solid #FF0000;
-   color: #fff;
+    padding: 11px;/*le da un tamaño al boton del formulario*/
+    border-radius: 8px;/*le da un borde al boton del formulario*/
+    
+    background-color: #FF0000;/*le da un color de fondo al boton*/
+   border: 5px solid #FF0000;/*le da un borde y color al boton*/
+   color: #fff;/*cambia las letras de color del boton*/
     font-weight: 900;
+}
+.btn-form:hover{/*cambia el color del boton del formulario*/
+background-color: #fff;
+color: #FF0000;
+border: 5px solid #fff;
 }
 .caja-boton-form{
     display: flex;
-    justify-content: end;
+    justify-content: end;/*mueve el boton al fin */
 }
 .anuncio{
-    border-radius: 9px;
+    width: 100%;/*le da al anuncio un espacio del 100%*/
+   max-width: 1200px;/*le da un limite*/
+    border-radius: 20px;/*le da un borde al anuncio*/
+   margin: 0 auto 20px auto   ;/*centra el anuncio al centro*/
+    display: flex;/*permite que se pueda mover*/
    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     
 }
 .imagen-anuncio{
-    width: 100%;
-    height: 250px;
+   width: 100%;/*la imagen del anuncio ocupa un 100% de su espacio*/
+    height: 300px;/*le da un alto al anuncio*/
     border-radius: 10px;
 }
 .h2-img{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border-bottom: #252222;
-}
-.img-card{
-    height: 215px;
-    width: 290px;
-    border-radius: 7px;
+    display: flex;/*permite que el tiutlo de las imagenes se pueda mover*/
+    justify-content: center;/*centra el titulo*/
+  
+    border-bottom: #252222;/*le un color al boton*/
 }
 .caja-card{
-    padding: 20px;
+    padding: 20px;/*separa las card*/
 }
+.img-card{
+    height: 215px;/*le da un alto a al conteiner de la imagen*/
+    width: 290px;/*le da un ancho a al conteiner de la imagen*/
+    border-radius: 7px;/*alinea el borde de las imagenes*/
+}
+
 .coneineiner-card{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: row;/*alinea las card en fila*/
+    justify-content: center;/*alinea las card al centro*/
+    gap: 20px;/*separa los elemento adentro de las card*/
+   
 }
 .card{
     display: flex;
-    flex-direction: column;
-    border: 5px solid #8d8b8bce;
-    border-radius: 7px;
-    padding: 0.8em;
+    flex-direction: column;/*alinea las card en columna*/
+    border: 5px solid #8d8b8bce;/*le un borde a la card */
+    border-radius: 9px;/*le alinea los bordes a la card*/
+    padding: 0.8em;/*separa la imagen del borde la card*/
   width: auto;
  
    
@@ -149,52 +161,59 @@ background: radial-gradient(circle,rgba(255, 0, 0, 1) 0%, rgba(87, 4, 1, 1) 100%
 
 }
 .card-text{
-    flex: 1;
-    padding: 10px;
-    line-height: 2em;
+    
+    padding: 10px;/*sepra los textos de la card*/
+    line-height: 2em;/*le da un alto fijo a la card*/
 }
 
 
 .card-btn{
 display: flex;
 
-justify-content: end;
+justify-content: end;/*manda el boton de la card al final*/
 
 
 }
 
 .boton{
-     background-color: #252222;
-    color: #fff;
+     background-color: #252222;/*le da un color al fondo del boton*/
+    color: #fff;/*le da un color a las letras del boton*/
     text-decoration: none;
     font-weight: 900;
-    padding: 0.6em 1.2em;
-    border-radius: 5px;
-    transition: color 1s ease;
+    padding: 0.6em ;/*le da un tamalo al boton*/
+    border-radius: 5px;/*le da un borde al boton*/
+    
+    
 
 }
+.boton:hover{/*cambia el color del boton de las card*/
+color: #fffdfd;
+background-color: #0066ff;
+}
 .foot{
-      border-top: 6px solid #FF0000;
-    background-color: #252222;
+      border-top: 6px solid #FF0000;/*le da una linea arriba de la caja del footer*/
+    background-color: #252222;/*le da un color de fondo al footer*/
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    color: #fff;
+    justify-content: space-around;/*seprara los elementos con el espacio sobrante*/
+    padding: 20px;/*le da un tamaño al footer*/
+    color: #fff;/* le da color a las letras del footer*/
 }
 .caja-foot-img{
   
 display: flex;
 justify-content: center;
-width: 120px;
+width: 120px;/*le da un espacio a la caja de las plataformas de descargas*/
 }
 .foot-img{
    
     
-    height: 75px;
-    width: 75px;
+    height: 75px;/*le da un alto a la imagende las plataformas de descargas*/
+    width: 75px;/*le da un ancho a la imagende las plataformas de descargas*/
 }
 .title-footer{
    
   
     font-weight: 900;
 }
+
+/*pagina2*/
