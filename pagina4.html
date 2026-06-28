@@ -5,27 +5,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina4
-
-
-    </title>
+    <title>pagina4</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 
 <body>
     <header>
-        <div>
+        <div class="caja-logo">
             <img src="/assets-web/logo2.png" alt="">
         </div>
-        <div>
-            <h1>areolineas Aurora</h1>
+        <div class="titulo-principal">
             <h2>viaja bien con</h2>
-
-
+            <h1>Aerolineas Aurora</h1>
         </div>
     </header>
     <nav>
-         <ul>
+        <ul>
             <a href="index.html">vuelos</a>
             <a href="pagina2.html">alojamiento</a>
             <a href="pagina3.html">paquetes</a>
@@ -33,120 +29,179 @@
             <a href="pagina5.html">atencion</a>
         </ul>
     </nav>
-    <main>
-        <h2>registrate y alenta a tu seleccion</h2>
-        <div>
-            <img src="" alt="">
-        </div>
-        <section>
-           <fieldset>
-<form action="">
-    <div>
-    <input type="number" id="pasajeros" name="pasajeros" min="1" max="6" placeholder="boletos">
-    </div>
-    <div>
-        <select name="pais" id="pais">
-          <option value="">tu pais</option>
-                <option value="arg">Argentina</option>
-                <option value="bra">Brasil</option>
-                <option value="ale">Alemania</option>
-                <option value="ita">Italia</option>
-                <option value="Uru">Uruguay</option>
-                <option value="fra">Francia</option>
-                <option value="esp">España</option>
-                <option value="ing">Inglaterra</option>
-                <option value="portu">Portugal</option>
-            </option>
-        </select>
-    </div>
-    <div>
-        <label for="ida">ida</label>
-        <input type="date" name="calendario" id="ida" min="2026-01-01" max="2026-07-19" >
+    <div class="contenedor-form">
+        <main>
+            <div class="contenedor-form">
+                <section class="formulario4">
+                    <form action="">
+                        <div>
+                            <h2>registrate y alenta a tu seleccion</h2>
+                        </div>
+                        <div>
+                            <input class="inscribir" type="number" id="pasajeros" name="pasajeros" min="1" max="6"
+                                placeholder="boletos">
+                        </div>
+                        <div>
+                            <select class="inscribir" name="pais" id="pais">
+                                <option value="">tu pais</option>
+                                <option value="arg">Argentina</option>
+                                <option value="bra">Brasil</option>
+                                <option value="ale">Alemania</option>
+                                <option value="ita">Italia</option>
+                                <option value="Uru">Uruguay</option>
+                                <option value="fra">Francia</option>
+                                <option value="esp">España</option>
+                                <option value="ing">Inglaterra</option>
+                                <option value="portu">Portugal</option>
+                                </option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="ida">ida</label>
+                            <input class="inscribir" type="date" name="calendario" id="ida" min="2026-01-01"
+                                max="2026-07-19">
 
 
-        <label for="vuelta">vuelta</label>
-        <input type="date" name="calendario" id="vuelta" min="2026-01-01" max="2026-07-19">
-    </div>
-    <div>
-        <select name="bandeja" id="lugar">
-            <option value="">butaca </option>
-            <option value="bandeja1">primera bandeja</option>
-            <option value="bandeja2">segunda bandeja</option>
-            <option value="bandeja3">tercera bandeja</option>
-        </select>
-    </div>
-    <div>
-        <input type="submit" value="sacar boleto" id="boton">
-    </div>
-</form>
-           </fieldset>
-           <aside>
-            <img src="assets-web/logo mundial.PNG" alt="">
-           </aside>
-        </section>
-        <section>
-            <h2>boletos en ofertas</h2>
-            <div>
-                <article>
-                    <div>
-                    <h3>Uruguay VS Cabo Verde</h3>
-                    </div>
-                    <div>
-                        <p>7pm-21-6-2026</p>
-                        <p>24,99$-55%</p>
-                    </div>
-                    <div>
-                        <a href="">conseguir</a>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <h3>Chequia VS Sudafrica</h3>
-                    </div>
-                    <div>
-                        <p>1pm-18-06-2026</p>
-                        <p>29,99-30%</p>
-                    </div>
-                     <div>
-                        <a href="">conseguir</a>
-                    </div>
-                   
-                </article>
-                <article>
-                    <div>
-                        <h3>Ecuador VS Curazao</h3>
-                    </div>
-                    <div>
-                        <p>9pm-20-06-2026</p>
-                        <p>19,99$-25%</p>
-                    </div>
-                    <div>
-                         <a href="">conseguir</a>
-                    </div>
-                </article>
+                            <label for="vuelta">vuelta</label>
+                            <input class="inscribir" type="date" name="calendario" id="vuelta" min="2026-01-01"
+                                max="2026-07-19">
+                        </div>
+                        <div>
+                            <select class="inscribir" name="bandeja" id="lugar">
+                                <option value="">butaca </option>
+                                <option value="bandeja1">primera bandeja</option>
+                                <option value="bandeja2">segunda bandeja</option>
+                                <option value="bandeja3">tercera bandeja</option>
+                            </select>
+                        </div>
+                        <div class="caja-boton-form">
+                            <input class="btn-form" type="submit" value="sacar boleto" id="boton">
+                        </div>
+                    </form>
+
+
+                </section>
             </div>
-        </section>
+            <div>
+                <img class="imagen-mundial" src="assets-web/logo mundial.PNG" alt="">
+            </div>
+            <section>
+                <h2>boletos en ofertas</h2>
+                <div class="contenedor-partidos">
+                    <article class="article-partidos">
+                        <div class="h3-partidos">
+                            <h3>Uruguay VS Cabo Verde</h3>
+                        </div>
+                        <div>
+                            <p class="horario">7pm-21-6-2026</p>
+                        </div>
+
+                        <div>
+                            <div class="precio">
+                                <p>24,99$-55%</p>
+                            </div>
+
+                        </div>
+                        <div class="caja-boton">
+                            <a  class="partidos-boton"  href="">conseguir</a>
+                        </div>
+                    </article>
+                    <article class="article-partidos">
+                        <div class="h3-partidos">
+                            <h3 x>Chequia VS Sudafrica</h3>
+                        </div>
+                        <div  class="horario">
+                            <p>1pm-18-06-2026</p>
+                        </div>
+
+                        <div class="precio">
+                            <p >29,99-30%</p>
+                        </div>
+
+
+                        <div class="caja-boton">
+                            <a  class="partidos-boton"  href="">conseguir</a>
+                        </div>
+
+                    </article>
+                   <article class="article-partidos">
+                        <div>
+                            <h3 class="h3-partidos" >Ecuador vs Curazao</h3>
+                        </div>
+                        <div class="horario">
+                            <p>9pm-20-06-2026</p>
+                        </div>
+
+                        <div>
+                            <p class="precio">19,99$-25%</p>
+                        </div>
+
+
+                        <div class="caja-boton">
+                            <a class="partidos-boton" href="">conseguir</a>
+                        </div>
+
+                    </article>
+
+                     <article class="article-partidos">
+                        <div>
+                            <h3 class="h3-partidos" >Nueva zelanda VS Iran</h3>
+                        </div>
+                        <div class="horario">
+                            <p>9pm-15-06-2026</p>
+                        </div>
+
+                        <div>
+                            <p class="precio">24,99$-25%</p>
+                        </div>
+
+
+                        <div class="caja-boton">
+                            <a class="partidos-boton" href="">conseguir</a>
+                        </div>
+
+                    </article>
+                    <article class="article-partidos">
+                        <div>
+                            <h3 class="h3-partidos" >Senegal VS Irak</h3>
+                        </div>
+                        <div class="horario">
+                            <p>4pm-26-06-2026</p>
+                        </div>
+
+                        <div>
+                            <p class="precio">15$-25%</p>
+                        </div>
+
+
+                        <div class="caja-boton">
+                            <a class="partidos-boton" href="">conseguir</a>
+                        </div>
+
+                    </article>
+    </div>
+    </section>
     </main>
     <footer>
-          <section>
+      <section class="foot">
             <div>
-                hecho por
+                <p class="title-footer">hecho por</p>
                 <div>
                     <p>estudiante del cet N <sup>o</sup> 30</p>
                     <p>Benicio Garcia</p>
                 </div>
             </div>
             <div>
-                <p> descarga la App en </p>
+                <p class="title-footer"> descarga la App</p>
 
-                <div>
-                    <img src="assets-web/google play.png" alt="">
-                    <img src="assets-web/apple.png" alt="">
-                    
+                <div class="caja-foot-img">
+                    <img class="foot-img" src="assets-web/play white.png" alt="">
+                    <img class="foot-img" src="assets-web/logo aple white.png" alt="">
+
                 </div>
             </div>
             <div>
-                <p>terminos y condiciones</p>
+                <p class="title-footer">terminos y condiciones</p>
                 <div>
                     <ul>
                         <li>al darle OK aceptas nuestros terminos</li>

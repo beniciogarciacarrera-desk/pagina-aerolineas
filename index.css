@@ -13,24 +13,39 @@ header{
 display: flex;/*hace que elementos dentro del titulo se puedan mover*/
 
 color:#FF0000 ;/*le da color al titulo*/
-padding: 2em;/*agranda el espacio del header*/
+
 gap: 2em;/*separa los elementos del header*/
- background-image: url(assets-web/fsfnmsjkenfjkfnjkfnijaefjsafnjsfnwjfwq.avif);/*le da una imagen al header */
+ background-image: url(assets-web/avion-header.avif);/*le da una imagen al header */
  background-repeat: no-repeat;/*hace que lai magen no se repita multiples veces*/
     background-size: cover;/*achica la imagen*/
     background-position: center;/*posiciona la imagen del header en el centro*/
     font-family: "Alien Block", sans-serif;
+    padding-left: 5em;
+    
    
 
 
 }
+.titulo-principal{
+  padding-top: 2em ;/*agranda el espacio arriba del titulo*/
+}
 
+.caja-logo{
+    background-color: #fff;/*le da un color a la caja del logo*/
+    padding-top: 50px;/*agranda el espacio de arriba de la caja*/
+  padding-bottom: 50px;/*agranda el espacio de abajo de la caja*/
+    
+   
+    
+   
+}
 
 header img{
      width: 190px;/*le da un ancho fijo al tamaño del logo*/
     height: 130px;/*le da un alto fijo al tamaño del logo*/
     
-   
+    
+  
    
 
 
@@ -68,6 +83,7 @@ nav a:hover{/*el hover para cuando pasas por encima de el haga un cambio*/
 .formulario{
     display: flex;/*para que los elementos del formulario se puedan mover*/
     justify-content: center;/*para que los elemetos del formulario se puedan alinear al centro*/
+   
 
 background: radial-gradient(circle,rgba(255, 0, 0, 1) 0%, rgba(87, 4, 1, 1) 100%);/*le da un degradado de colores al fondo del formulario*/
     padding: 10px;/*para que los elementos del formulario no se peguen al borde*/
@@ -75,6 +91,7 @@ background: radial-gradient(circle,rgba(255, 0, 0, 1) 0%, rgba(87, 4, 1, 1) 100%
     color: #fff;/*le da el color de las letras al formulario*/
      font-weight: 900;/* le da espesor*/
     
+     
      
 
    
@@ -129,19 +146,20 @@ border: 5px solid #fff;
 .h2-img{
     display: flex;/*permite que el tiutlo de las imagenes se pueda mover*/
     justify-content: center;/*centra el titulo*/
-  
-    border-bottom: #252222;/*le un color al boton*/
+  padding: 15px;/*sepaar el titulo de las imagenes*/
+  color: #252222;
+   
 }
 .caja-card{
     padding: 20px;/*separa las card*/
 }
 .img-card{
     height: 215px;/*le da un alto a al conteiner de la imagen*/
-    width: 290px;/*le da un ancho a al conteiner de la imagen*/
+    width: 320px;/*le da un ancho a al conteiner de la imagen*/
     border-radius: 7px;/*alinea el borde de las imagenes*/
 }
 
-.coneineiner-card{
+.conteiner-card{
     display: flex;
     flex-direction: row;/*alinea las card en fila*/
     justify-content: center;/*alinea las card al centro*/
@@ -197,6 +215,7 @@ background-color: #0066ff;
     justify-content: space-around;/*seprara los elementos con el espacio sobrante*/
     padding: 20px;/*le da un tamaño al footer*/
     color: #fff;/* le da color a las letras del footer*/
+   
 }
 .caja-foot-img{
   
@@ -212,8 +231,87 @@ width: 120px;/*le da un espacio a la caja de las plataformas de descargas*/
 }
 .title-footer{
    
-  
+ padding: 10px;
     font-weight: 900;
 }
 
 /*pagina2*/
+/*pagina3*/
+/*pagina4*/
+
+
+.formulario4{
+background-color: #fff;
+
+    display: flex;/*para que los elementos del formulario se puedan mover*/
+    justify-content: center;/*para que los elemetos del formulario se puedan alinear al centro*/
+     padding: 10px;/*para que los elementos del formulario no se peguen al borde*/
+    border-radius: 8px;/*le da un borde al formulario*/
+    color: #fff;/*le da el color de las letras al formulario*/
+     font-weight: 900;/* le da espesor*/
+     border: 7px solid #F9B300;
+     color: #F9B300;
+     border-radius: 15px;
+   
+
+}
+.contenedor-partidos{
+width: 57%;
+margin: 0 auto;
+ 
+}
+.article-partidos{
+    display: flex;
+  align-items: center;     /* alinea verticalmente */
+  gap: 7em;               /* espacio entre columnas */
+  padding: 10px;
+  background-color: rgb(194, 190, 190);
+  margin: 15px;
+  border-radius: 15px;
+   
+    
+}
+
+
+/* Cada "columna" con ancho fijo para que queden alineadas */
+.h3-partidos {
+  width: 200px;    /* nombre del partido */
+  margin: 0;
+}
+
+.precio {
+  width: 150px;    /* horario */
+}
+.horario{
+    width: 120px;
+}
+
+.caja-boton{
+  
+    padding: 10px;
+    border-radius: 10px;
+}
+.partidos-boton {
+     
+  background-color: #FF0000;/*le da un color al fondo del boton*/
+    color: #fff;/*le da un color a las letras del boton*/
+    text-decoration: none;
+    font-weight: 900;
+    padding: 0.6em ;/*le da un tamalo al boton*/
+    border-radius: 10px;/*le da un borde al boton*/
+ 
+  
+}
+.partidos-boton:hover{
+   color: #FF0000;
+background-color: #fff;
+}
+
+
+
+
+
+
+
+
+

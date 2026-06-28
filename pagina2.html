@@ -1,24 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pagina2</title>
-     <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="index.css" />
 </head>
-
 
 <body>
     <header>
-        <div>
+        <div class="caja-logo">
             <img src="/assets-web/logo2.png" alt="">
         </div>
-        <div>
-            <h1>areolineas Aurora</h1>
+        <div class="titulo-principal">
             <h2>viaja bien con</h2>
+            <h1>Aerolineas Aurora</h1>
         </div>
     </header>
     <nav>
@@ -32,12 +29,9 @@
     </nav>
 
     <main>
-       <div >
-        <section>
-
-
-            <form action="get">
-              
+       
+            <section class="formulario">
+                <form action="get">
                     <div>
                         <h3 class="h3-form">¿donde te alojaras?</h3>
                     </div>
@@ -57,143 +51,160 @@
                         </select>
                     </div>
                     <div>
-
+                        <label for="estrella">⭐</label>
+                        <input type="radio" name="estrella" id="estrella" />
 
                         <label for="estrella">⭐</label>
-                        <input  type="radio" name="estrella" id="estrella">
-
-
-                        <label for="estrella">⭐</label>
-                        <input type="radio" name="estrella" id="estrella">
-
+                        <input type="radio" name="estrella" id="estrella" />
 
                         <label for="estrella">⭐</label>
-                        <input type="radio" name="estrella" id="estrella">
-
-
-                        <label for="estrella">⭐</label>
-                        <input type="radio" name="estrella" id="estrella">
-
+                        <input type="radio" name="estrella" id="estrella" />
 
                         <label for="estrella">⭐</label>
-                        <input type="radio" name="estrella" id="estrella">
+                        <input type="radio" name="estrella" id="estrella" />
 
-
-
-
+                        <label for="estrella">⭐</label>
+                        <input type="radio" name="estrella" id="estrella" />
                     </div>
-                    <div >
-                        <input  type="submit" id="buscar" name="buscar" value="buscar">
+                    <div class="caja-boton-form">
+                        <input class="btn-form" type="submit" id="buscar" name="buscar" value="buscar" />
                     </div>
-                    
+                </form>
+            </section>
+            <div class="anuncio">
+                <img class="imagen-anuncio" src="assets-web/anuncio hoteles.png" alt="" />
+                <img class="imagen-anuncio" src="assets-web/anuncio hotel.PNG" alt="" />
                 
+            </div>
 
 
-            </form>
       
-        </section>
-          <aside >
-               <img  img src="assets-web/anuncio hoteles.png" alt="">
-        </aside>
-        </div>
-        
-        
-        
-       
-        
-            
 
-            <section>
-                <h2>elije tu lugar de confort </h2>
+        <section class="caja-card">
+            <div class="h2-img">
+                <h2>elije tu lugar de confort</h2>
+            </div>
+            <div class="conteiner-card">
 
 
-                <article>
-                    <div>
-                        <img src="assets-web/hotel grand lumiere.jfif" alt="">
-                    </div>
-                    <div>
-                        <h3> Grand Lumiere hotel</h3>
+                <article class="card">
 
+                    <img class="img-card" src="assets-web/hotel.jpg" alt="" />
+
+                    <div class="card-text">
+                        <h3>Grand Lumiere hotel</h3>
 
                         <p>madrid-españ</p>
 
-
                         <p>59,99/Noche</p>
 
-                        <p>★★★★★</p>
-                    </div>
-                    <div>
-                        <a href=""></a>
+                        <p>★★★★☆</p>
+
+                        <div class="card-btn">
+                            <a href="" class="boton">conseguir</a>
+                        </div>
                     </div>
                 </article>
-                <article>
-                    <div>
-                        <img src="assets-web/las grutas.jpg" alt="">
-                    </div>
-                    <div>
+
+
+                <article class="card">
+
+                    <img class="img-card" src="assets-web/Lasgrutas2.jpg" alt="" />
+
+                    <div class="card-text">
                         <h3>Las Grutas hotel</h3>
 
-
-
-
                         <p>Rio Negro-Argentina</p>
-
 
                         <p>29,99/noche</p>
 
-
                         <p>★★★☆☆</p>
-                    </div>
-                    <div>
-                        <a href=""></a>
+
+                        <div class="card-btn">
+                            <a href="" class="boton">conseguir</a>
+                        </div>
                     </div>
                 </article>
-                <article>
-                    <div>
-                        <img src="assets-web/hotel eldeweiss.png" alt="">
-                    </div>
-                    <div>
-                        <h3>Hotel Eldelweiss</h3>
 
+
+                <article class="card">
+
+                    <img class="img-card" src="assets-web/hotel eldeweiss.png" alt="" />
+
+                    <div class="card-text">
+                        <h3>Hotel Eldelweiss</h3>
 
                         <p>Rio Negro-Argentina</p>
 
+                        <p>44,99/noche</p>
+
+                        <p>★★★★☆</p>
+
+                        <div class="card-btn">
+                            <a href="" class="boton">conseguir</a>
+                        </div>
+                </article>
+
+                <article class="card">
+
+                    <img class="img-card" src="assets-web/lasmarianas.jpg" alt="" />
+
+                    <div class="card-text">
+                        <h3>Las Marianas Hotel</h3>
+
+                        <p>atolones del sur-Maldivas</p>
 
                         <p>44,99/noche</p>
 
+                        <p>★★★★★</p>
 
-                        <p>★★★★☆</p>
-                    </div>
-                    <div>
-                        <a href=""></a>
-                    </div>
+                        <div class="card-btn">
+                            <a href="" class="boton">conseguir</a>
+                        </div>
                 </article>
 
+                <article class="card">
 
-            </section>
+                    <img class="img-card" src="assets-web/hoteles intercontiental.jpg" alt="" />
+
+                    <div class="card-text">
+                        <h3>Intercontinental Hotel</h3>
+
+                        <p>Barcelona-España</p>
+
+                        <p>44,99/noche</p>
+
+                        <p>★★★★☆</p>
+
+                        <div class="card-btn">
+                            <a href="" class="boton">conseguir</a>
+                        </div>
+                </article>
+        </section>
+        </div>
+
     </main>
 
-
     <footer>
-        <section>
+        <section class="foot">
             <div>
-                hecho por
+                <p class="title-footer">hecho por</p>
                 <div>
                     <p>estudiante del cet N <sup>o</sup> 30</p>
                     <p>Benicio Garcia</p>
                 </div>
             </div>
             <div>
-                <p> descarga la App en </p>
+                <p class="title-footer"> descarga la App</p>
 
-                <div>
-                    <img src="assets-web/google play.png" alt="">
-                    <img src="assets-web/apple.png" alt="">
+                <div class="caja-foot-img">
+                    <img class="foot-img" src="assets-web/play white.png" alt="">
+                    <img class="foot-img" src="assets-web/logo aple white.png" alt="">
 
                 </div>
             </div>
             <div>
-                <p>terminos y condiciones</p>
+                <p class="title-footer">terminos y condiciones</p>
                 <div>
                     <ul>
                         <li>al darle OK aceptas nuestros terminos</li>
@@ -207,6 +218,5 @@
         </section>
     </footer>
 </body>
-
 
 </html>
