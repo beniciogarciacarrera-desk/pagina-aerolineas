@@ -21,11 +21,15 @@ gap: 2em;/*separa los elementos del header*/
     background-position: center;/*posiciona la imagen del header en el centro*/
     font-family: "Alien Block", sans-serif;
     padding-left: 5em;
+    text-shadow: 7px 3px 4px rgba(0,0,0,0.57);
+   
+    
     
    
 
 
 }
+
 .titulo-principal{
   padding-top: 2em ;/*agranda el espacio arriba del titulo*/
 }
@@ -80,35 +84,30 @@ nav a:hover{/*el hover para cuando pasas por encima de el haga un cambio*/
  .h3-form{
     text-align: center;/*centra el titulo del formulario*/
 }  
-.formulario{
-    display: flex;/*para que los elementos del formulario se puedan mover*/
-    justify-content: center;/*para que los elemetos del formulario se puedan alinear al centro*/
-   
-
-background: radial-gradient(circle,rgba(255, 0, 0, 1) 0%, rgba(87, 4, 1, 1) 100%);/*le da un degradado de colores al fondo del formulario*/
-    padding: 10px;/*para que los elementos del formulario no se peguen al borde*/
-    border-radius: 8px;/*le da un borde al formulario*/
-    color: #fff;/*le da el color de las letras al formulario*/
-     font-weight: 900;/* le da espesor*/
-    
-     
-     
-
-   
+.formulario {
+    /* Mantené tu código anterior (background, padding, border-radius, max-width) */
+    background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(87, 4, 1, 1) 100%);
+    padding: 30px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 900;
+    box-sizing: border-box;
+    display: block; 
+    width: 100%;
+    max-width: 550px;      
+    margin: 40px auto;    
 }
 
-
+.inscribir {
+    /* 2. CAMBIO CLAVE: Forzamos a que ocupen el 100% del contenedor rojo */
+    display: block;
+    width: 100%;            /* Al cambiar el formulario a block, esto ahora sí va a estirar los inputs */
+    box-sizing: border-box; /* Evita que el padding rompa los bordes */
     
-
-.inscribir{
-      display: flex;
-    flex-wrap: wrap;/*hace que el titulo y su contenido se separen en dos lienas horizontales*/
-    width: 100vh;/*le da un espacio 100% a los elementos del fromulario*/
-    margin: 20px;/*separa los elemtos del formulario*/
-    border-radius: 5px;/*le da un borde a los elementos*/
-    padding: 12px;/*le da un tamaño a los elementos del formulario*/
-   
-  
+    margin: 15px 0;         /* Separa un input del otro hacia abajo */
+    border-radius: 5px;
+    padding: 12px;
+    border: none;
 }
 .btn-form{
     padding: 11px;/*le da un tamaño al boton del formulario*/
@@ -198,7 +197,7 @@ justify-content: end;/*manda el boton de la card al final*/
     color: #fff;/*le da un color a las letras del boton*/
     text-decoration: none;
     font-weight: 900;
-    padding: 0.6em ;/*le da un tamalo al boton*/
+    padding: 1em ;/*le da un tamalo al boton*/
     border-radius: 5px;/*le da un borde al boton*/
     
     
@@ -209,7 +208,7 @@ color: #fffdfd;
 background-color: #0066ff;
 }
 .foot{
-      border-top: 6px solid #FF0000;/*le da una linea arriba de la caja del footer*/
+      border-top: 6px solid #4D4C4C;/*le da una linea arriba de la caja del footer*/
     background-color: #252222;/*le da un color de fondo al footer*/
     display: flex;
     justify-content: space-around;/*seprara los elementos con el espacio sobrante*/
@@ -231,17 +230,32 @@ width: 120px;/*le da un espacio a la caja de las plataformas de descargas*/
 }
 .title-footer{
    
- padding: 10px;
+ padding: 7px;
     font-weight: 900;
 }
 
 /*pagina2*/
+.input-estrellas{
+    opacity:0 ;
+    color: #F9B300;
+   
+
+}
+.estrellas{
+    font-size: 35px;
+    color: #fff;
+}
+.estrellas:hover{
+color: #F9B300;
+}
+
 /*pagina3*/
 /*pagina4*/
 
 
 .formulario4{
-background-color: #fff;
+background: #238DB8;
+background: linear-gradient(90deg,rgba(35, 141, 184, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(35, 141, 184, 1) 100%);
 
     display: flex;/*para que los elementos del formulario se puedan mover*/
     justify-content: center;/*para que los elemetos del formulario se puedan alinear al centro*/
@@ -249,9 +263,12 @@ background-color: #fff;
     border-radius: 8px;/*le da un borde al formulario*/
     color: #fff;/*le da el color de las letras al formulario*/
      font-weight: 900;/* le da espesor*/
-     border: 7px solid #F9B300;
+     border: 4px solid #F9B300;
      color: #F9B300;
      border-radius: 15px;
+       width: 100%;
+    max-width: 550px;      
+    margin: 40px auto;    
    
 
 }
@@ -297,7 +314,7 @@ margin: 0 auto;
     color: #fff;/*le da un color a las letras del boton*/
     text-decoration: none;
     font-weight: 900;
-    padding: 0.6em ;/*le da un tamalo al boton*/
+    padding: 0.6em ;/*le da un tamaño al boton*/
     border-radius: 10px;/*le da un borde al boton*/
  
   
@@ -305,6 +322,37 @@ margin: 0 auto;
 .partidos-boton:hover{
    color: #FF0000;
 background-color: #fff;
+}
+/*pagina5*/
+.section-pagina5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+min-height: 515px;
+}
+.chat{
+    padding: 10px;
+  width: 400px;
+  margin: 8px;
+  border-radius: 7px;
+}
+.section-chat{
+    display: flex;
+  
+  min-height: 50px;
+}
+
+.boton-buscar{
+    background-color: #FF0000;
+    padding: 8px;
+    border-radius: 10px;
+    border: 3px solid  #FF0000 ;
+    color: #fff;
+}
+.h2-chat{
+display: flex;
+justify-content: center;
+margin: 10px;
 }
 
 

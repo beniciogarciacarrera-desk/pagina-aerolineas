@@ -36,17 +36,16 @@
 
         /* Ocultamos COMPLETAMENTE los círculos de los inputs */
         .contenedor-estrellas input {
-            position: absolute;
+           
             opacity: 0;
-            width: 0;
-            height: 0;
+           
         }
 
         /* Estilo de las estrellas (Gris por defecto cuando no están seleccionadas) */
         .contenedor-estrellas label {
-            font-size: 50px;
+            font-size: 100px;
             color: #dcdde1; /* Gris claro */
-            cursor: pointer;
+           
             transition: color 0.2s ease, transform 0.1s;
         }
 
@@ -54,7 +53,7 @@
         .contenedor-estrellas label:hover,
         .contenedor-estrellas label:hover ~ label {
             color: #f1c40f; /* Dorado */
-            transform: scale(1.1);
+          
         }
 
         /* 2. Cuando haces CLIC: Mantiene dorada la estrella seleccionada y todas las anteriores */
@@ -64,24 +63,10 @@
 
 
         /* --- SECCIÓN DE MENSAJES (OPCIONAL) --- */
-        .mensaje {
-            display: none;
-            margin-top: 30px;
-            padding: 12px;
-            border-radius: 8px;
-            font-weight: bold;
-            background-color: #ecf0f1;
-            color: #34495e;
-        }
+       
 
         /* Muestra el mensaje correcto según el clic */
-        #star1:checked ~ .msg-1,
-        #star2:checked ~ .msg-2,
-        #star3:checked ~ .msg-3,
-        #star4:checked ~ .msg-4,
-        #star5:checked ~ .msg-5 {
-            display: block;
-        }
+        
     </style>
 </head>
 <body>
@@ -105,13 +90,9 @@
         <label for="star2">★</label>
 
         <input type="radio" id="star1" name="estrellas">
-        <label for="star1">★</label>
+        <label for="star1"></label>
 
-        <div class="mensaje msg-1">Seleccionaste: 1 Estrella ⭐</div>
-        <div class="mensaje msg-2">Seleccionaste: 2 Estrellas ⭐⭐</div>
-        <div class="mensaje msg-3">Seleccionaste: 3 Estrellas ⭐⭐⭐</div>
-        <div class="mensaje msg-4">Seleccionaste: 4 Estrellas ⭐⭐⭐⭐</div>
-        <div class="mensaje msg-5">Seleccionaste: 5 Estrellas ⭐⭐⭐⭐⭐</div>
+      
 
     </div>
 </div>
