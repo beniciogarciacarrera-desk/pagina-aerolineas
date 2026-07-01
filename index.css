@@ -340,6 +340,9 @@ color: #fff;/*le da un color a las letras del titulo*/
    color: #FF0000;/*cambiando el color de las letars*/
 background-color: #fff;/*y de la caja*/
 }
+
+
+
 /*pagina5*/
 .section-pagina5{
     display: flex;/*permite que los elemnetos se puedan mover*/
@@ -349,7 +352,7 @@ min-height: 515px;/*le da un alto fijo*/
 }
 .section-chat{
     display: flex;/*permite que los elementos como titulo input y boton se peudan mover*/
-  
+
   min-height: 50px;
 }
 .chat{
@@ -357,20 +360,22 @@ min-height: 515px;/*le da un alto fijo*/
   width: 400px;/*le da un ancho fijo*/
   margin: 8px;/*lo separa con otros elementos*/
   border-radius: 7px;/*alinea las esquinas del input*/
+    border: none;/*le quita el borde prederterminado*/
+    border: 1px solid #757373;/*le da un borde y un color a ese borde*/
 }
 
 
 .boton-buscar{
-    background-color: #FF0000;
-    padding: 8px;
-    border-radius: 10px;
-    border: 3px solid  #FF0000 ;
-    color: #fff;
+    background-color: #FF0000;/*le un color al boton*/
+    padding: 8px;/*le da un espacio al boton dandole un espesor*/
+    border-radius: 10px;/*alinea los bordes*/
+    border: 3px solid  #FF0000 ;/*le da un borde y un color a ese borde*/
+    color: #fff;/*le da un color a las letras del boton*/
 }
 .h2-chat{
-display: flex;
-justify-content: center;
-margin: 10px;
+display: flex;/*permite que el titulo se peuda mover*/
+justify-content: center;/*centra el titulo en el eje x*/
+margin: 10px;/*separa el titulo de los elementos vecinos*/
 }
 
 
