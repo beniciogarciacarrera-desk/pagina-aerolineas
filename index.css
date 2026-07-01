@@ -6,6 +6,7 @@
 }
 body{
     margin: auto;
+   
 }
 
 header{
@@ -63,6 +64,7 @@ nav{
 }
 nav ul{
 display: flex;/*permite que los elementos del nav se puedan mover*/
+list-style: none;
 
 justify-content: center;/*aliena los elementos del nav*/
 gap: 60px;/*separa los elementos del nav*/
@@ -85,9 +87,9 @@ nav a:hover{/*el hover para cuando pasas por encima de el haga un cambio*/
     text-align: center;/*centra el titulo del formulario*/
 }  
 .formulario {
-    /* Mantené tu código anterior (background, padding, border-radius, max-width) */
+  
     background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(87, 4, 1, 1) 100%);
-    padding: 30px;
+    padding: 40px;
     border-radius: 8px;
     color: #fff;
     font-weight: 900;
@@ -99,19 +101,19 @@ nav a:hover{/*el hover para cuando pasas por encima de el haga un cambio*/
 }
 
 .inscribir {
-    /* 2. CAMBIO CLAVE: Forzamos a que ocupen el 100% del contenedor rojo */
+    
     display: block;
     width: 100%;            /* Al cambiar el formulario a block, esto ahora sí va a estirar los inputs */
     box-sizing: border-box; /* Evita que el padding rompa los bordes */
     
-    margin: 15px 0;         /* Separa un input del otro hacia abajo */
+    margin: 20px 0;         /* Separa un input del otro hacia abajo */
     border-radius: 5px;
-    padding: 12px;
+    padding: 15px;
     border: none;
 }
 .btn-form{
     padding: 11px;/*le da un tamaño al boton del formulario*/
-    border-radius: 8px;/*le da un borde al boton del formulario*/
+    border-radius: 15px;/*le da un borde al boton del formulario*/
     
     background-color: #FF0000;/*le da un color de fondo al boton*/
    border: 5px solid #FF0000;/*le da un borde y color al boton*/
@@ -129,18 +131,25 @@ border: 5px solid #fff;
 }
 .anuncio{
     width: 100%;/*le da al anuncio un espacio del 100%*/
-   max-width: 1200px;/*le da un limite*/
+   max-width: 1000px;/*le da un limite*/
     border-radius: 20px;/*le da un borde al anuncio*/
-   margin: 0 auto 20px auto   ;/*centra el anuncio al centro*/
-    display: flex;/*permite que se pueda mover*/
+   margin: 0 auto    ;/*centra el anuncio*/
+
+
    
     
     
 }
 .imagen-anuncio{
    width: 100%;/*la imagen del anuncio ocupa un 100% de su espacio*/
-    height: 300px;/*le da un alto al anuncio*/
+    height: 350px;/*le da un alto al anuncio*/
     border-radius: 10px;
+    margin: 10px;
+     box-shadow: 15px 15px 29px 5px rgba(0,0,0,0.43);
+-webkit-box-shadow: 15px 15px 29px 5px rgba(0,0,0,0.43);
+-moz-box-shadow: 15px 15px 29px 5px rgba(0,0,0,0.43);
+
+    
 }
 .h2-img{
     display: flex;/*permite que el tiutlo de las imagenes se pueda mover*/
@@ -169,7 +178,7 @@ border: 5px solid #fff;
     display: flex;
     flex-direction: column;/*alinea las card en columna*/
     border: 5px solid #8d8b8bce;/*le un borde a la card */
-    border-radius: 9px;/*le alinea los bordes a la card*/
+    border-radius: 15px;/*le alinea los bordes a la card*/
     padding: 0.8em;/*separa la imagen del borde la card*/
   width: auto;
  
@@ -197,8 +206,8 @@ justify-content: end;/*manda el boton de la card al final*/
     color: #fff;/*le da un color a las letras del boton*/
     text-decoration: none;
     font-weight: 900;
-    padding: 1em ;/*le da un tamalo al boton*/
-    border-radius: 5px;/*le da un borde al boton*/
+    padding: 0.7em ;/*le da un tamalo al boton*/
+    border-radius: 7px;/*le da un borde al boton*/
     
     
 
@@ -208,7 +217,7 @@ color: #fffdfd;
 background-color: #0066ff;
 }
 .foot{
-      border-top: 6px solid #4D4C4C;/*le da una linea arriba de la caja del footer*/
+      border-top: 6px solid #FF0000;/*le da una linea arriba de la caja del footer*/
     background-color: #252222;/*le da un color de fondo al footer*/
     display: flex;
     justify-content: space-around;/*seprara los elementos con el espacio sobrante*/
@@ -235,69 +244,84 @@ width: 120px;/*le da un espacio a la caja de las plataformas de descargas*/
 }
 
 /*pagina2*/
-.input-estrellas{
-    opacity:0 ;
-    color: #F9B300;
-   
 
+.p-estrellas{
+    font-size: 23px;
+    color: #3d3d3d;
 }
-.estrellas{
-    font-size: 35px;
-    color: #fff;
-}
-.estrellas:hover{
-color: #F9B300;
-}
-
 /*pagina3*/
 /*pagina4*/
 
+.fondo-pagina4{
+     background-image: url(assets-web/fondo-munidal-pagina.webp);/*le da una imagen al header */
+ background-repeat: no-repeat;/*hace que lai magen no se repita multiples veces*/
+    background-size: cover;/*achica la imagen*/
+    background-position: center;/*posiciona la imagen del header en el centro*/
+    
+}
 
 .formulario4{
-background: #238DB8;
-background: linear-gradient(90deg,rgba(35, 141, 184, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(35, 141, 184, 1) 100%);
-
     display: flex;/*para que los elementos del formulario se puedan mover*/
+
+    background-color: #3e3e3e;
     justify-content: center;/*para que los elemetos del formulario se puedan alinear al centro*/
-     padding: 10px;/*para que los elementos del formulario no se peguen al borde*/
+     padding: 15px;/*para que los elementos del formulario no se peguen al borde*/
     border-radius: 8px;/*le da un borde al formulario*/
     color: #fff;/*le da el color de las letras al formulario*/
      font-weight: 900;/* le da espesor*/
-     border: 4px solid #F9B300;
-     color: #F9B300;
+     
+     color: #fff;
      border-radius: 15px;
        width: 100%;
     max-width: 550px;      
-    margin: 40px auto;    
+    margin: 40px auto; 
+
    
 
+}
+
+
+.imagen-mundial{
+    margin: 25px;
+    border-radius: 15px;
 }
 .contenedor-partidos{
 width: 57%;
 margin: 0 auto;
  
 }
+.caja-h2-mundial{
+    display: flex;
+justify-content: center;
+;
+}
+.h2-mundial{
+background-color: #FF0000;
+color: #fff;
+    padding:7px ;
+    border-radius: 7px;
+}
 .article-partidos{
     display: flex;
   align-items: center;     /* alinea verticalmente */
   gap: 7em;               /* espacio entre columnas */
   padding: 10px;
-  background-color: rgb(194, 190, 190);
+  background-color: #b7b2b2;
   margin: 15px;
   border-radius: 15px;
+  border: 2px solid #757373;
    
     
 }
 
 
-/* Cada "columna" con ancho fijo para que queden alineadas */
 .h3-partidos {
-  width: 200px;    /* nombre del partido */
+  width: 200px;    
   margin: 0;
 }
 
 .precio {
-  width: 150px;    /* horario */
+  width: 220px;   
 }
 .horario{
     width: 120px;
@@ -315,7 +339,7 @@ margin: 0 auto;
     text-decoration: none;
     font-weight: 900;
     padding: 0.6em ;/*le da un tamaño al boton*/
-    border-radius: 10px;/*le da un borde al boton*/
+    border-radius: 7px;/*le da un borde al boton*/
  
   
 }

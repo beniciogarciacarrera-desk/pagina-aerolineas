@@ -18,3 +18,4 @@
 #paletas de colores
 #FF0000
 #252222
+    background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(87, 4, 1, 1) 100%);
