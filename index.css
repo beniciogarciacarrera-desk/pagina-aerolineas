@@ -1,8 +1,8 @@
   
 *{
- margin: 0;
+ margin: 0; 
     padding: 0;/*para que quede sin bordes*/ 
-    box-sizing: border-box;
+    box-sizing: border-box;/*para incluir su propio paddign a los elementos*/
 }
 body{
     margin: auto;
@@ -17,12 +17,12 @@ color:#FF0000 ;/*le da color al titulo*/
 
 gap: 2em;/*separa los elementos del header*/
  background-image: url(assets-web/avion-header.avif);/*le da una imagen al header */
- background-repeat: no-repeat;/*hace que lai magen no se repita multiples veces*/
+ background-repeat: no-repeat;/*hace que la imagen no se repita multiples veces*/
     background-size: cover;/*achica la imagen*/
     background-position: center;/*posiciona la imagen del header en el centro*/
-    font-family: "Alien Block", sans-serif;
-    padding-left: 5em;
-    text-shadow: 7px 3px 4px rgba(0,0,0,0.57);
+   
+    padding-left: 5em;/*le un espacio a la izquierda del header*/
+    text-shadow: 7px 3px 4px rgba(0,0,0,0.57);/*para que el texto tenga sombra*/
    
     
     
@@ -64,7 +64,7 @@ nav{
 }
 nav ul{
 display: flex;/*permite que los elementos del nav se puedan mover*/
-list-style: none;
+list-style: none;/*elimina las viñetas de la lista que contiene al nav*/
 
 justify-content: center;/*aliena los elementos del nav*/
 gap: 60px;/*separa los elementos del nav*/
@@ -78,7 +78,7 @@ nav a{
   
 }
 nav a:hover{/*el hover para cuando pasas por encima de el haga un cambio*/
-    border-bottom: 2px solid #fff; /*cada ves que pasas por encima y hace un cambio se muestra por ej un borde blanco*/
+    border-bottom: 2.5px solid #fff; /*cada ves que pasas por encima y hace un cambio se muestra por ej un borde blanco*/
     
 }
 
@@ -88,51 +88,44 @@ nav a:hover{/*el hover para cuando pasas por encima de el haga un cambio*/
 }  
 .formulario {
   
-    background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(87, 4, 1, 1) 100%);
-    padding: 40px;
-    border-radius: 8px;
-    color: #fff;
-    font-weight: 900;
-    box-sizing: border-box;
-    display: block; 
-    width: 100%;
-    max-width: 550px;      
-    margin: 40px auto;    
+    background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(87, 4, 1, 1) 100%);/*le da un degrade de color al fondo del formulario*/
+    padding: 40px;/*le da un espacio a los inputs del formulario*/
+    border-radius: 8px;/*le da un borde al formulario*/
+    color: #fff;/*le da un color a las letras del formulario*/
+    font-weight: 900;/*le da un espesor a las letras del formulario*/
+    max-width: 500px;  /*le da un limite al ancho para poder expandice*/    
+    margin: 40px auto;   /*centra el formulario al centro*/ 
 }
 
 .inscribir {
-    
-    display: block;
-    width: 100%;            /* Al cambiar el formulario a block, esto ahora sí va a estirar los inputs */
-    box-sizing: border-box; /* Evita que el padding rompa los bordes */
-    
-    margin: 20px 0;         /* Separa un input del otro hacia abajo */
-    border-radius: 5px;
-    padding: 15px;
-    border: none;
+    width: 100%;  /*le da un espacio 100% a los input que pueden ocupar para poder expandirce */      
+    margin: 20px 0;   /*separa los elementos dentro del formulario*/     
+    border-radius: 5px;/*le da un borde al formulario*/
+    padding: 15px;/*separa los elementos del formulario de modo que no toque el formulario*/
+    border: none;/*le quita el borde prederterminado a los input*/
+ 
 }
 .btn-form{
     padding: 11px;/*le da un tamaño al boton del formulario*/
     border-radius: 15px;/*le da un borde al boton del formulario*/
-    
     background-color: #FF0000;/*le da un color de fondo al boton*/
    border: 5px solid #FF0000;/*le da un borde y color al boton*/
    color: #fff;/*cambia las letras de color del boton*/
-    font-weight: 900;
+    font-weight: 900;/*le da un espesor a las letras del boton del formulario*/
 }
-.btn-form:hover{/*cambia el color del boton del formulario*/
-background-color: #fff;
-color: #FF0000;
-border: 5px solid #fff;
+.btn-form:hover{/*cambia el color del boton del formulario cuando pasas el cursor por encima*/
+background-color: #fff;/*cambianno el color del boton*/
+color: #FF0000;/*cambiandole el color de as letras del boton*/
+border: 5px solid #fff;/*y dandole un borde */
 }
 .caja-boton-form{
-    display: flex;
+    display: flex;/*hace que el boton se mueva*/
     justify-content: end;/*mueve el boton al fin */
 }
 .anuncio{
-    width: 100%;/*le da al anuncio un espacio del 100%*/
-   max-width: 1000px;/*le da un limite*/
-    border-radius: 20px;/*le da un borde al anuncio*/
+    width: 100%;/*le da al anuncio un espacio del 100% para ocupar*/
+   max-width: 1000px;/*le da un limite para exoandirce a los costados*/
+   
    margin: 0 auto    ;/*centra el anuncio*/
 
 
@@ -143,10 +136,10 @@ border: 5px solid #fff;
 .imagen-anuncio{
    width: 100%;/*la imagen del anuncio ocupa un 100% de su espacio*/
     height: 350px;/*le da un alto al anuncio*/
-    border-radius: 10px;
-    margin: 10px;
+   border-radius: 20px;/*le da un borde al anuncio*/
+    margin: 10px;/*le da un espacio invicible al anuncio separadole de los otros elementos*/
      box-shadow: 15px 15px 29px 5px rgba(0,0,0,0.43);
--webkit-box-shadow: 15px 15px 29px 5px rgba(0,0,0,0.43);
+-webkit-box-shadow: 15px 15px 29px 5px rgba(0,0,0,0.43);/*le da una sombra al anuncio*/
 -moz-box-shadow: 15px 15px 29px 5px rgba(0,0,0,0.43);
 
     
@@ -155,33 +148,32 @@ border: 5px solid #fff;
     display: flex;/*permite que el tiutlo de las imagenes se pueda mover*/
     justify-content: center;/*centra el titulo*/
   padding: 15px;/*sepaar el titulo de las imagenes*/
-  color: #252222;
+  color: #252222;/*le da un color a las letras del anuncio*/
    
 }
 .caja-card{
     padding: 20px;/*separa las card*/
+ 
 }
 .img-card{
     height: 215px;/*le da un alto a al conteiner de la imagen*/
     width: 320px;/*le da un ancho a al conteiner de la imagen*/
-    border-radius: 7px;/*alinea el borde de las imagenes*/
+    border-radius: 7px;/*le da un borde de las imagenes*/
 }
 
 .conteiner-card{
-    display: flex;
-    flex-direction: row;/*alinea las card en fila*/
-    justify-content: center;/*alinea las card al centro*/
+    display: flex;/*el display flex ya alinea las card automaticamente horizontalmente*/
+
     gap: 20px;/*separa los elemento adentro de las card*/
    
 }
 .card{
-    display: flex;
-    flex-direction: column;/*alinea las card en columna*/
+    display: flex;/*permite que el contenido de la card se mueva libremente*/
+    flex-direction: column;/*alinea el contenido de las card en columna*/
     border: 5px solid #8d8b8bce;/*le un borde a la card */
-    border-radius: 15px;/*le alinea los bordes a la card*/
+    border-radius: 15px;/*le da un bordes a la card*/
     padding: 0.8em;/*separa la imagen del borde la card*/
-  width: auto;
- 
+
    
     
 
@@ -204,22 +196,22 @@ justify-content: end;/*manda el boton de la card al final*/
 .boton{
      background-color: #252222;/*le da un color al fondo del boton*/
     color: #fff;/*le da un color a las letras del boton*/
-    text-decoration: none;
-    font-weight: 900;
+    text-decoration: none;/*elimina el subrayado prederterminado*/
+    font-weight: 900;/*le da unespesor a las letras*/
     padding: 0.7em ;/*le da un tamalo al boton*/
     border-radius: 7px;/*le da un borde al boton*/
     
     
 
 }
-.boton:hover{/*cambia el color del boton de las card*/
-color: #fffdfd;
-background-color: #0066ff;
+.boton:hover{/*cambia el color del boton de las card al pasar el cursor*/
+color: #fffdfd;/*cambiando el color de las letras del boton*/
+background-color: #0066ff;/*y cambiando el color del boton*/
 }
 .foot{
+    display: flex;/*permite que lo elementos del footeer se peudan mover*/
       border-top: 6px solid #FF0000;/*le da una linea arriba de la caja del footer*/
     background-color: #252222;/*le da un color de fondo al footer*/
-    display: flex;
     justify-content: space-around;/*seprara los elementos con el espacio sobrante*/
     padding: 20px;/*le da un tamaño al footer*/
     color: #fff;/* le da color a las letras del footer*/
@@ -227,8 +219,8 @@ background-color: #0066ff;
 }
 .caja-foot-img{
   
-display: flex;
-justify-content: center;
+display: flex;/*permite que las imagenes del footer se puedan mover*/
+justify-content: center;/*centra las imagenes del footer*/
 width: 120px;/*le da un espacio a la caja de las plataformas de descargas*/
 }
 .foot-img{
@@ -239,15 +231,15 @@ width: 120px;/*le da un espacio a la caja de las plataformas de descargas*/
 }
 .title-footer{
    
- padding: 7px;
-    font-weight: 900;
+ padding: 7px;/*separa el titulo del elemento del footer de su contenido*/
+    font-weight: 900;/*le da un espesor a las letras*/
 }
 
 /*pagina2*/
 
 .p-estrellas{
-    font-size: 23px;
-    color: #3d3d3d;
+    font-size: 23px;/*agranda las estrellas */
+    color: #3d3d3d;/*le da un color a las estrellas*/
 }
 /*pagina3*/
 /*pagina4*/
@@ -263,108 +255,110 @@ width: 120px;/*le da un espacio a la caja de las plataformas de descargas*/
 .formulario4{
     display: flex;/*para que los elementos del formulario se puedan mover*/
 
-    background-color: #3e3e3e;
+    background-color: #3e3e3e;/*le da un color al formulario*/
     justify-content: center;/*para que los elemetos del formulario se puedan alinear al centro*/
      padding: 15px;/*para que los elementos del formulario no se peguen al borde*/
     border-radius: 8px;/*le da un borde al formulario*/
     color: #fff;/*le da el color de las letras al formulario*/
      font-weight: 900;/* le da espesor*/
-     
-     color: #fff;
-     border-radius: 15px;
-       width: 100%;
-    max-width: 550px;      
-    margin: 40px auto; 
+     color: #fff;/*le da un color a las letras del formulario*/
+     border-radius: 15px;/*le da un borde al formulario*/
+      
+    max-width: 550px; /* le da un espacio a los costados al formulario*/
+    margin: 40px auto; /*separa el formualrio de otros contenidos*/
 
    
 
 }
 
 
-.imagen-mundial{
-    margin: 25px;
-    border-radius: 15px;
-}
+
 .contenedor-partidos{
-width: 57%;
-margin: 0 auto;
+width: 57%;/*le da un ancho para ocupar*/
+margin: 0 auto;/*centra los card al centro*/
+
  
 }
 .caja-h2-mundial{
-    display: flex;
-justify-content: center;
-;
+    display: flex;/*perimite que el titulo se pueda mover*/
+justify-content: center;/*centra el titulo */
+
 }
 .h2-mundial{
-background-color: #FF0000;
-color: #fff;
-    padding:7px ;
-    border-radius: 7px;
+background-color: #FF0000;/*le da un color al titulo*/
+color: #fff;/*le da un color a las letras del titulo*/
+    padding:7px ;/*le un espacio al titulo*/
+    border-radius: 7px;/*le da un borde a la caja del ttulo*/
 }
 .article-partidos{
-    display: flex;
-  align-items: center;     /* alinea verticalmente */
-  gap: 7em;               /* espacio entre columnas */
-  padding: 10px;
-  background-color: #b7b2b2;
-  margin: 15px;
-  border-radius: 15px;
-  border: 2px solid #757373;
+    display: flex;/*permite que las cards se puedan mover en su caja*/
+    height: 60px; /*le da una altura fija*/
+  align-items: center; /*  alinea el contenido centralmente en el eje y*/ 
+  gap: 7em;    /*separa los contenidos entre si en la card*/          
+  padding: 10px;/*permite que lo elementos se sepren del borde*/
+  background-color: #b7b2b2;/*le da un color aq la card*/
+  margin: 15px;/*separa las card entre si*/
+  border-radius: 15px;/*le da un borde a la card*/
+  border: 2px solid #757373;/*le da un borde de la card y le da un corlor*/
    
     
 }
 
 
 .h3-partidos {
-  width: 200px;    
+   
+  width: 200px; /*separa los lelemtos entre si para que se vea simetrico con los otros*/   
   margin: 0;
 }
 
 .precio {
-  width: 220px;   
+    
+  width: 220px;  /*separa los lelemtos entre si para que se vea simetrico con los otros*/   
 }
 .horario{
-    width: 120px;
+    
+    width: 120px;/*separa los lelemtos entre si para que se vea simetrico con los otros*/  
 }
 
 .caja-boton{
   
-    padding: 10px;
-    border-radius: 10px;
+    padding: 10px;/*le da un espacio al boton*/
+    border-radius: 10px;/*alinea las esquinas de la caja*/
 }
 .partidos-boton {
      
   background-color: #FF0000;/*le da un color al fondo del boton*/
     color: #fff;/*le da un color a las letras del boton*/
-    text-decoration: none;
-    font-weight: 900;
+    text-decoration: none;/*quita elc subrayado prederterminado*/
+    font-weight: 900;/*le da un espesor a las letras*/
     padding: 0.6em ;/*le da un tamaño al boton*/
     border-radius: 7px;/*le da un borde al boton*/
  
   
 }
-.partidos-boton:hover{
-   color: #FF0000;
-background-color: #fff;
+.partidos-boton:hover{/*el hover para cuando pasas por encima de el haga un cambio*/
+   color: #FF0000;/*cambiando el color de las letars*/
+background-color: #fff;/*y de la caja*/
 }
 /*pagina5*/
 .section-pagina5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-min-height: 515px;
-}
-.chat{
-    padding: 10px;
-  width: 400px;
-  margin: 8px;
-  border-radius: 7px;
+    display: flex;/*permite que los elemnetos se puedan mover*/
+    justify-content: center;/*alinea los elementos al centro en el eje x*/
+    align-items: center;/*alinea los elementos en el eje y*/
+min-height: 515px;/*le da un alto fijo*/
 }
 .section-chat{
-    display: flex;
+    display: flex;/*permite que los elementos como titulo input y boton se peudan mover*/
   
   min-height: 50px;
 }
+.chat{
+    padding: 10px;/*aumenta el grosor del input*/
+  width: 400px;/*le da un ancho fijo*/
+  margin: 8px;/*lo separa con otros elementos*/
+  border-radius: 7px;/*alinea las esquinas del input*/
+}
+
 
 .boton-buscar{
     background-color: #FF0000;
